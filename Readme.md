@@ -12,7 +12,7 @@ This project is a backend system to manage operations for automotive dealerships
 - PostgreSQL (>= 9.x)
 - Yarn
 #### Setup Instructions
- 1. Clone the Repository  ```git clone git@github.com:edogbosunny/automotive-backend.git``` then cd into the automotive-backend directory 
+ 1. Clone the Repository  ```git clone https://github.com/edogbosunny/automotive-backend.git``` then cd into the automotive-backend directory 
 
 2. Install Dependencies
 yarn install
@@ -46,6 +46,12 @@ The server will start at http://localhost:4000/.
 
 8. Access GraphQL Playground
 Open your browser and navigate to http://localhost:4000/playground to access the GraphQL playground.
+
+Note: You need to add to the api keys to the request header on the playground.
+ ```{
+  "x-api-key": "your-api-key"
+}
+this adds the api header to the request.
 
 #### GraphQL API
 ##### Queries
