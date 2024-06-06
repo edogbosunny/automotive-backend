@@ -50,7 +50,8 @@ Open your browser and navigate to http://localhost:4000/playground to access the
 Note: You need to add to the api keys to the request header on the playground.
  ```{
   "x-api-key": "your-api-key"
-}
+}```
+
 this adds the api header to the request.
 
 #### GraphQL API
