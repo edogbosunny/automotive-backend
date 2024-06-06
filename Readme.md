@@ -12,7 +12,7 @@ This project is a backend system to manage operations for automotive dealerships
 - PostgreSQL (>= 9.x)
 - Yarn
 #### Setup Instructions
- 1. Clone the Repository  ```git clone <repository-url>``` then cd into the automotive-backend directory 
+ 1. Clone the Repository  ```git clone git@github.com:edogbosunny/automotive-backend.git``` then cd into the automotive-backend directory 
 
 2. Install Dependencies
 yarn install
@@ -21,11 +21,11 @@ Create a .env file in the root directory and add your database configuration:
 
 ##### env sample
 
-        ```DB_HOST=localhost
+     ```DB_HOST=localhost
         DB_USERNAME=your_db_username
         DB_PASSWORD=your_db_password
         DB_DATABASE=automotive_db
-        DB_TEST_DATABASE=automotive_test_db```
+        DB_TEST_DATABASE=automotive_test_db
 
 4. Initialize the Database
 Ensure you have PostgreSQL installed and running. Create the development and test databases:
