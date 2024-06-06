@@ -54,7 +54,7 @@ Note: You need to add to the api keys to the request header on the playground. `
 - Get all vehicles
 graphql
 
-    ``` query {
+    ```query {
   vehicles {
     id
     make
@@ -63,8 +63,8 @@ graphql
     price
     vin
   }
-}
-
+  }
+ 
 - Get vehicles by make
 graphql
 
@@ -77,7 +77,8 @@ graphql
         price
         vin
       }
-    }```
+    }
+    
 - Get vehicles by model
 graphql
 
@@ -90,7 +91,8 @@ graphql
         price
         vin
       }
-    }```
+    }
+    
 - Get vehicles by year
 graphql
     ```
@@ -103,7 +105,8 @@ graphql
         price
         vin
       }
-}```
+    }
+
 - Get vehicles by dealership
 graphql
 
@@ -117,10 +120,11 @@ graphql
         vin
       }
     }
+    
 - Get all customers
 graphql
 
-    ```query {
+    ``` query {
       customers {
         id
         firstName
@@ -129,10 +133,21 @@ graphql
         phone
       }
     }
+    
 - Get customers by last name
 graphql
 
-`
+     ``` query {
+       customers(lastName: "Doe") {
+         id
+         firstName
+         lastName
+         email
+         phone
+       }
+     }
+
+
 - Get all sales
 graphql
 
@@ -195,6 +210,7 @@ graphql
         }
       }
     }
+    
 - Get all dealerships
 graphql
 
@@ -205,6 +221,7 @@ graphql
         parentId
       }
     }
+    
 - Get dealership by ID
 graphql
 
@@ -215,6 +232,7 @@ graphql
         parentId
       }
     }
+    
 ##### Mutations
 - Add a new vehicle
 graphql
